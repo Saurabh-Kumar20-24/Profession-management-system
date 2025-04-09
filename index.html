@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Profession Management System</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <style>
+        input::placeholder{
+            color: white !important;
+            opacity: 0.7 !important;
+        }
+    </style>
+  </head>
+  <body class="bg-dark text-white">
+    <div class="container">
+      <h1 class="heading">New Employees</h1>
+      <div class="d-flex flex-nowrap">
+        <div class="">
+          <label>Enter Name</label><br>
+          <input class="form-control bg-transparent text-white" type="text" id="name" placeholder="Enter name"/>
+        </div>
+        <div class="mx-5">
+          <label for="profession">Enter Profession</label><br>
+          <input class="form-control bg-transparent text-white" type="text" id="profession" placeholder="Enter profession"/>
+        </div>
+        <div class="">
+          <label for="age">Enter Age</label><br>
+          <input class="form-control bg-transparent text-white" type="number" id="age" placeholder="Enter age"/>
+        </div>
+      </div>
+      <button id="button" class="btn btn-light mt-3">Add User</button>
+      <div>
+        <div id="msgid"></div>
+        <h2>Added Employees</h2>
+        <div id="employeelist"></div>
+      </div>
+    </div>
+ 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
